@@ -12,7 +12,8 @@
 
 # Uncomment a feed source
 git checkout edb87675ddcf5ff45fd67913e6f31b7738f9ce5d
-
+# 写入Makefile改内核版本
+sed -i '14i KERNEL_TESTING_PATCHVER:=5.15' target/linux/amlogic/Makefile
 sed -i "s/KERNEL_PATCHVER:=*.*/KERNEL_PATCHVER:=5.15/g" target/linux/amlogic/Makefile
 sed -i "s/KERNEL_TESTING_PATCHVER:=*.*/KERNEL_TESTING_PATCHVER:=5.15/g" target/linux/amlogic/Makefile
 
