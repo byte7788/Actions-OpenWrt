@@ -13,8 +13,8 @@
 # Uncomment a feed source
 git checkout 4f5a34e801dd41fe9d4125e7caa5056aa6575814
 
-sed -i "s/KERNEL_PATCHVER:=*.*/KERNEL_PATCHVER:=6.1/g" /target/linux/x86/Makefile
-sed -i "s/KERNEL_TESTING_PATCHVER:=*.*/KERNEL_TESTING_PATCHVER:=6.1/g" /target/linux/amlogic/Makefile
+sed -i "s/KERNEL_PATCHVER:=*.*/KERNEL_PATCHVER:=6.1/g" target/linux/x86/Makefile
+sed -i "s/KERNEL_TESTING_PATCHVER:=*.*/KERNEL_TESTING_PATCHVER:=6.1/g" target/linux/amlogic/Makefile
 
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
