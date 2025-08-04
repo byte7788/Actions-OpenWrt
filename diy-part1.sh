@@ -11,7 +11,7 @@
 #
 
 # Uncomment a feed source
-git checkout 4f5a34e801dd41fe9d4125e7caa5056aa6575814
+git checkout edb87675ddcf5ff45fd67913e6f31b7738f9ce5d
 
 sed -i "s/KERNEL_PATCHVER:=*.*/KERNEL_PATCHVER:=5.15/g" target/linux/x86/Makefile
 sed -i "s/KERNEL_TESTING_PATCHVER:=*.*/KERNEL_TESTING_PATCHVER:=5.15/g" target/linux/amlogic/Makefile
