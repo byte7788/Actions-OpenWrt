@@ -13,12 +13,12 @@
 # Uncomment a feed source
 
 # 用6.1.137内核版本
-git checkout 4f5a34e801dd41fe9d4125e7caa5056aa6575814
+# git checkout 4f5a34e801dd41fe9d4125e7caa5056aa6575814
 
 # 写入Makefile改内核版本
-sed -i '14i KERNEL_TESTING_PATCHVER:=5.15' target/linux/amlogic/Makefile
-sed -i "s/KERNEL_PATCHVER:=*.*/KERNEL_PATCHVER:=6.1/g" target/linux/amlogic/Makefile
-sed -i "s/KERNEL_TESTING_PATCHVER:=*.*/KERNEL_TESTING_PATCHVER:=6.1/g" target/linux/amlogic/Makefile
+# sed -i '14i KERNEL_TESTING_PATCHVER:=5.15' target/linux/amlogic/Makefile
+# sed -i "s/KERNEL_PATCHVER:=*.*/KERNEL_PATCHVER:=6.1/g" target/linux/amlogic/Makefile
+# sed -i "s/KERNEL_TESTING_PATCHVER:=*.*/KERNEL_TESTING_PATCHVER:=6.1/g" target/linux/amlogic/Makefile
 
 #添加软件源
 # sed -i '1i src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
