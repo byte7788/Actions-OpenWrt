@@ -13,7 +13,7 @@
 # Uncomment a feed source
 
 # 用6.1.137内核版本
-# git checkout 4f5a34e801dd41fe9d4125e7caa5056aa6575814
+git checkout 4f5a34e801dd41fe9d4125e7caa5056aa6575814
 
 # 写入Makefile改内核版本
 # sed -i '14i KERNEL_TESTING_PATCHVER:=5.15' target/linux/amlogic/Makefile
