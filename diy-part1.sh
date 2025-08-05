@@ -20,6 +20,12 @@
 # sed -i "s/KERNEL_PATCHVER:=*.*/KERNEL_PATCHVER:=6.1/g" target/linux/amlogic/Makefile
 # sed -i "s/KERNEL_TESTING_PATCHVER:=*.*/KERNEL_TESTING_PATCHVER:=6.1/g" target/linux/amlogic/Makefile
 
+#内核改变，编译前建议清理下,输入以下命令： 
+make dirclean
+
+# 如果编译失败（缓存问题 删除 bin 目录和 build_dir 等目录）, 在输入以下命令：
+# make clean
+
 #添加软件源
 # sed -i '1i src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
 # sed -i '2i src-git small https://github.com/kenzok8/small' feeds.conf.default
